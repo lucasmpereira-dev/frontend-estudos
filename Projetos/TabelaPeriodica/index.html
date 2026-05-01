@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Periódica</title>
+
+    <style>
+        /* --- CSS:Define a aparência e o layout --- */
+
+        body{
+            background-color: #0f172a; /* Cor de fundo escura */
+            color: #f8fafc; /* code de texto clara */
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Configuração do Grid da Tabela */
+
+        .tabela.periodica {
+            display: grid;
+            grid-template-columns: repeat(18, 1fr);
+            grid-template-columns: repeat(7, 88px);
+            gap: 5px;
+            width: 100%;
+            max-width: 1000px;
+
+
+        }
+
+        .elemento {
+            grid-column: var(--col);
+            grid-row: var(--row);
+
+            background: #1e293b;
+            border: 1px solid #334155;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        /* Efeito para passar o mouse */
+
+        .elemento:hover {
+            transform: scale(1.2);
+            z-index: 10;
+            border-color: #38bdf8;
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
